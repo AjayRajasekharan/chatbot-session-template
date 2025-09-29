@@ -8,7 +8,7 @@ responses = {
     "how are you?": "I'm good, how are you?",
 }
 
-st.title("🤖 Rule-Based Chatbot")
+st.title("Rule-Based Chatbot")
 
 # Take user input
 user_input = st.text_input("Say something:")
