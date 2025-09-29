@@ -6,7 +6,7 @@ Test repo for chatbot session
 2) After creating the repository → Code → Codespaces → **Create codespace on main**.
 3) This should open a new window -> automatically runs pip install -r requirements.txt in the terminal, wait 5 to 10 minutes for set up.
 
-## Run Chatbots
+## Run Chatbots on StreamLit
 
 ### Option 1
 1. In Codespaces, press `Ctrl+Shift+P`.
