@@ -26,6 +26,12 @@ Test repo for chatbot session
    If prompted, set port visibility to **Public** (so others can view your demo).
 4) Ctrl + C in terminal to close Streamlit App
 
+## How to close/stop Codespace
+1. Go to the GitHub website.
+2. You can click your profile picture (top right) → Your Codespaces [OR] go directly: https://github.com/codespaces [OR] Go to the repo on which you ran codespace
+3. Find the Codespace you were working in (chatbot-session-template).
+4. Click ••• (three dots) → Stop Codespace.
+
 ## Notes
 - Prefer **google/flan-t5-small** for Q&A style prompts.
 - If downloads are slow the first time, wait—models are cached after first run.
