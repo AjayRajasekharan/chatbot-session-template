@@ -2,9 +2,10 @@ import streamlit as st
 
 # Rule-based chatbot = we hardcode responses in a dictionary
 responses = {
-    "hi": "Hello there! 👋",
+    "hi": "Hello there!",
     "bye": "Goodbye, see you soon!",
-    "thanks": "You're welcome 🙂",
+    "thanks": "You're welcome",
+    "how are you?": "I'm good, how are you?",
 }
 
 st.title("🤖 Rule-Based Chatbot")
