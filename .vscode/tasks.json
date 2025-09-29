@@ -1,0 +1,54 @@
+{
+  // VS Code task configuration file
+  "version": "2.0.0",
+  "tasks": [
+    {
+      // Task label = how it appears in the "Run Task" menu
+      "label": "Run Chatbot (App 1)",
+
+      // This tells VS Code it's a shell command
+      "type": "shell",
+
+      // The actual command being run
+      "command": "streamlit run app1_rule_based.py",
+
+      // Optional grouping (so tasks show in one place in the UI)
+      "group": "build",
+
+      // No error parsing needed for this task
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Chatbot (App 2)",
+      "type": "shell",
+      "command": "streamlit run app2_llm_basic.py",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Chatbot (App 3)",
+      "type": "shell",
+      "command": "streamlit run app3_llm_full.py",
+      "group": "build",
+      "problemMatcher": []
+    }
+
+    /*
+    --------------------------------------------------------------------
+    TEMPLATE BLOCK: To add a NEW chatbot app later (e.g., app4_rag_bot.py):
+    
+    {
+      "label": "Run Chatbot (App 4 ChatBot)",
+      "type": "shell",
+      "command": "streamlit run app4_chat_bot.py",
+      "group": "build",
+      "problemMatcher": []
+    }
+
+    - Copy this block, paste it inside the "tasks" array above.
+    - Update the "label" to describe the new app.
+    - Update the "command" with the correct .py file name.
+    --------------------------------------------------------------------
+    */
+  ]
+}
