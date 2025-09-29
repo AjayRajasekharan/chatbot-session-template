@@ -2,7 +2,7 @@
 Test repo for chatbot session
 
 ## Set up and Run GitHub Codespaces
-1) Click 'Use this template' option in green on the top right corner -> Create a new repository
+1) Click 'Use this template' option in the top right corner -> Create a new repository
 2) After creating the repository → Code → Codespaces → **Create codespace on main**.
 3) This should open a new window -> automatically runs pip install -r requirements.txt in the terminal, wait 5 to 10 minutes for set up.
 
