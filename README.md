@@ -1,8 +1,6 @@
 # chatbot-session-template
 Test repo for chatbot session
 
-# Session 2 — LLM Chatbot (Streamlit)
-
 ## Run in GitHub Codespaces
 1) Click 'Use this template' option in green on the top right corner -> Create a new repository
 2) After creating the repository → Code → Codespaces → **Create codespace on main**.
