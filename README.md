@@ -1,5 +1,4 @@
 # chatbot-session-template
-Test repo for chatbot session
 
 ## Set up and Run GitHub Codespaces
 1) Click 'Use this template' option in the top right corner -> Create a new repository
