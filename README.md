@@ -1,4 +1,4 @@
-# chatbot-session-template
+# Chatbot-session-template
 
 ## Set up and Run GitHub Codespaces
 1) Click 'Use this template' option in the top right corner -> Create a new repository
