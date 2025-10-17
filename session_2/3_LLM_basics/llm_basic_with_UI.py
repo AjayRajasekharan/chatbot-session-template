@@ -11,10 +11,13 @@ st.title("LLM Chatbot")
 generator = pipeline("text2text-generation", model="google/flan-t5-small")
 
 # Input box for user
-user_input = st.text_input("Ask me something:")
+with st.form(key="chat_form", clear_on_submit=True):
+    user_input = st.text_input("Say something:", key="input_text")
+    submitted = st.form_submit_button("Send")  # Triggered on Enter or click
 
-if user_input:
+if submitted and user_input:
     # Generate a response
+    st.write("User:", user_input)
     response = generator(user_input, max_new_tokens=50)[0]["generated_text"]
 
     # Show the bot's reply
