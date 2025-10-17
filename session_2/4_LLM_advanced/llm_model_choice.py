@@ -63,12 +63,12 @@ pipe = load_model(model_choice)
 # ------------------------------
 
 # Textbox for user input
-user_input = st.text_input("Ask me anything:")
-
-# Button to trigger the chatbot
-go = st.button("Ask")
+with st.form(key="chat_form", clear_on_submit=True):
+    user_input = st.text_input("Ask me anything:", key="input_text")
+    go = st.form_submit_button("Ask")
 
 if go and user_input.strip():
+    st.write("User:", user_input)
     with st.spinner("Thinking..."):
         # Generate response using the selected model
         out = pipe(user_input, max_new_tokens=max_new_tokens, do_sample=True)

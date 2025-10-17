@@ -1,8 +1,5 @@
 import streamlit as st
 
-# Rule-Based Chatbot (Streamlit UI version)
-# This runs as a small web app instead of the console.
-
 st.title("Rule-Based Chatbot")
 
 # RULES: We store fixed responses in a dictionary
@@ -14,15 +11,21 @@ responses = {
 }
 
 # Input box for the user (instead of typing in console)
-user_input = st.text_input("Say something:")
+with st.form(key="chat_form", clear_on_submit=True):
+    user_input = st.text_input("Say something:", key="input_text")
+    submitted = st.form_submit_button("Send")  # Triggered on Enter or click
 
-if user_input:
+if submitted and user_input:
     # Normalize input (make lowercase so 'Hi' and 'hi' are the same)
-    user_input = user_input.lower().strip()
+    normalized_input = user_input.lower().strip()
 
-    # If user says something we know → reply from dictionary
-    if user_input in responses:
-        st.write("Bot:", responses[user_input])
+    st.write("User:", user_input)
+    if normalized_input in responses:
+        # If user says something we know → reply from dictionary
+        st.write("Bot:", responses[normalized_input])
     else:
         # If it's not in dictionary → default reply
         st.write("Bot: Sorry, I don't understand that yet...")
+
+    # Clear the input box after processing
+    st.session_state.input_box = ""
