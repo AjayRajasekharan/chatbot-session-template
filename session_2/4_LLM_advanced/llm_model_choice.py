@@ -65,7 +65,7 @@ pipe = load_model(model_choice)
 # Textbox for user input
 with st.form(key="chat_form", clear_on_submit=True):
     user_input = st.text_input("Ask me anything:", key="input_text")
-    go = st.form_submit_button("Ask")
+    go = st.form_submit_button("Ask") # Triggered on Enter or click
 
 if go and user_input.strip():
     st.write("User:", user_input)
